@@ -59,11 +59,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
         ),
         bottomSheet: Container(
           margin: EdgeInsets.symmetric(vertical: 5),
-          height: 80,
+          height: 100,
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(bottom: 5.0),
+                padding: const EdgeInsets.only(bottom: 20.0),
                 child: Center(
                   child: SmoothPageIndicator(
                     controller: _pageController,
