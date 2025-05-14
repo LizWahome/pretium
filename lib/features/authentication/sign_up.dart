@@ -79,13 +79,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   const SizedBox(width: 10),
                    TextButton(
                     onPressed: ()async {
-                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                        backgroundColor: AppColors.primaryColor,
-                        content: Text("Opening terms and conditions"),
-                      ));
+                      
                       final Uri url = Uri.parse("https://pretium.africa/term-of-use");
                       if (await canLaunchUrl(url)) {
                         await launchUrl(url);
+                        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                        backgroundColor: AppColors.primaryColor,
+                        content: Text("Opening terms and conditions"),
+                      ));
                       } else {
                         throw 'Could not launch $url';
                       }
