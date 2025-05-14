@@ -85,7 +85,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 ),
               ),
               CustomButton(
-                title: _pageController.initialPage == 2 ? "Get Started" : "Next",
+                title: (_pageController.hasClients && _pageController.page == 2) ? "Get Started" : "Next",
                 onPressed: () {
                   if (_pageController.page == 2) {
                     // Navigate to the next screen
