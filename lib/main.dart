@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pretium_app/features/onboarding/onboarding.dart';
 import 'package:pretium_app/features/onboarding/splash_screen.dart';
 
 void main() {
